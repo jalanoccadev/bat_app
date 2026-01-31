@@ -56,6 +56,7 @@ public class JiraServiceImpl implements JiraService {
 
     private Map<String, String> buildJiraHeaders() {
         return Map.of(
+            "Content-Type", "application/json",
             "Cookie", "tenant.session.token="
         );
     }

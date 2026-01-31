@@ -11,7 +11,7 @@ import com.jalanocca.bat_backend.model.dto.jira.JiraIssueDto;
 import com.jalanocca.bat_backend.service.JiraService;
 
 @RestController
-@RequestMapping("/jira")
+@RequestMapping("/api/jira")
 public class JiraController {
 
     private final JiraService jiraService;

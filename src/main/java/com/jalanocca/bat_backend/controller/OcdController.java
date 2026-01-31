@@ -19,7 +19,7 @@ import com.jalanocca.bat_backend.service.ExcelChecklistService;
 import com.jalanocca.bat_backend.service.OcdService;
 
 @RestController
-@RequestMapping("/ocd")
+@RequestMapping("/api/ocd")
 public class OcdController {
 
     private final OcdService ocdService;
