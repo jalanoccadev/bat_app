@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: bat_backend
+
+  datasource:
+    url: jdbc:h2:file:D:/iniciativas/flowdesk/data/demo-dm;AUTO_SERVER=TRUE
+    driver-class-name: org.h2.Driver
+    username: sa
+    password:
+  jpa:
+    hibernate:
+      ddl-auto: create
+    show-sql: false
+    defer-datasource-initialization: true
+
+  h2:
+    console:
+      enabled: true
+      path: /h2-console
+
+  sql:
+    init:
+      mode: always
+  
+server:
+  servlet:
+    context-path: /api
+
+
+app:
+  config:
+    path-for-repos: E:/Trabajo/iniciativas/recursos
