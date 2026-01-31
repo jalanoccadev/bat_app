@@ -66,6 +66,7 @@ public class JiraServiceImpl implements JiraService {
         jiraIssueDto.setIssueId(issue.getKey());
         jiraIssueDto.setIssueTitle(issue.getFields().getSummary());
         jiraIssueDto.setIssueState(issue.getFields().getStatus().getName());
+        jiraIssueDto.setAllowedActions(List.of());
         // Asignar otros campos según sea necesario
         return jiraIssueDto;
     }
